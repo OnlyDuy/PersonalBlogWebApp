@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "dIc4zOaXsimxUHalcZPlfKBLH3oT9fx3XV+3ysQWpZM=",
+  "Source": "PersonalBlogWebApp",
+  "BasePath": "_content/PersonalBlogWebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
