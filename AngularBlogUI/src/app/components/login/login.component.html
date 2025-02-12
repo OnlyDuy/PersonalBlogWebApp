@@ -1,7 +1,27 @@
+<div class="container">
+  <div class="header d-flex justify-content-between align-items-center px-4 py-0">
+    <div class="d-flex align-items-center">
+      <img src="https://img.freepik.com/premium-vector/word-blog-vector-banner-with-text-colored-rainbow_100655-2724.jpg" alt="Logo" style="width: 20%; height: 20%;">
+      <a href="#" class="text-decoration-none" style="font-size: 24px;">Đăng nhập</a>
+    </div>
+    <div>
+      <a href="#" class="text-primary text-decoration-none">Bạn cần giúp đỡ?</a>
+    </div>
+  </div>
+</div>
 <div class="outer">
   <div class="container">
-    <div class="row">
-      <div class="offset-md-2 col-lg-4 col-md-7 offset-lg-4 offset-md-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mx-auto" style="max-width: 450px;">
+        <div class="welcome-container text-center d-flex align-items-center justify-content-center" style="height: 100vh;">
+          <div>
+            <img src="https://cdn.sanity.io/images/kts928pd/production/3d0a1942ea617825e187c3c9a3811a5d93a331be-370x366.png" alt="Logo" class="mb-4" style="width: 80%; height: 80%;">
+            <h1 class="text-white font-weight-bold mb-3">Welcome, User!</h1>
+            <p class="text-white mb-5">The best platform for your amazing experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mx-auto" style="max-width: 450px;">
         <div class="panel border bg-white">
           <div class="panel-heading">
             <h3 class="pt-3 font-weight-bold">
@@ -13,7 +33,7 @@
               <div class="form-group pt-3">
                 <div class="input-field"
                   [class.error]="loginForm.controls['username'].dirty && loginForm.hasError('required', 'username')">
-                  <span class="fa fa-user p-2"></span>
+                  <span class="fa-solid fa-user p-2"></span>
                   <input type="text" name="" id="" placeholder="Username" formControlName="username">
                 </div>
               </div>
@@ -22,7 +42,7 @@
               <div class="form-group pt-3">
                 <div class="input-field"
                   [class.error]="loginForm.controls['passwordHash'].dirty && loginForm.hasError('required', 'passwordHash')">
-                  <span class="fa fa-lock p-2"></span>
+                  <span class="fa-solid fa-lock p-2"></span>
                   <input [type]="this.type" name="" id="" placeholder="Password" formControlName="passwordHash">
                   <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
                 </div>
@@ -85,5 +105,48 @@
         <button type="button" (click)="confirmToSend()" class="btn btn-primary">Send</button>
       </div>
     </div>
+  </div>
+</div>
+<div class="container-fluid footer wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+      <div class="row g-5 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+              <h5 class="mb-4">Liên hệ</h5>
+              <p class="mb-2"><i class="fa-solid fa-location-dot me-3"></i>132 Khương Thượng, Đống Đa, Hà Nội</p>
+              <p class="mb-2"><i class="fa-solid fa-phone me-3"></i>0975 236 250</p>
+              <p class="mb-2"><i class="fa-solid fa-envelope me-3"></i>luathoavang</p>
+              <div class="d-flex pt-2">
+                  <a class="btn btn-outline-primary me-1" href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                  <a class="btn btn-outline-primary me-1" href=""><i class="fa-brands fa-square-facebook"></i></a>
+                  <a class="btn btn-outline-primary me-1" href=""><i class="fa-brands fa-square-youtube"></i></a>
+                  <a class="btn btn-outline-primary me-1" href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-5 col-md-6">
+              <h5 class="mb-4">DỊCH VỤ NỔI BẬT</h5>
+              <div class="row g-2 pt-2">
+                  <div class="col-6">
+                      <p class="mb-2"><i class="fa-solid fa-chart-simple me-3"></i>Thay đổi đăng ký kinh doanh</p>
+                  </div>
+                  <div class="col-6">
+                      <p class="mb-2"><i class="fa-solid fa-comment me-3"></i>Đăng ký nhãn hiệu logo</p>
+                  </div>
+                  <div class="col-6">
+                      <p class="mb-2"><i class="fa-solid fa-bars me-3"></i>Tư vấn đầu tư nước ngoài</p>
+                  </div>
+                  <div class="col-6">
+                      <p class="mb-2"><i class="fa-solid fa-shop-lock me-3"></i>Giấy phép con các loại</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="mb-4">Newsletter</h5>
+              <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+              <div class="position-relative mx-auto" style="max-width: 400px;">
+                  <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                  <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+              </div>
+          </div>
+      </div>
   </div>
 </div>

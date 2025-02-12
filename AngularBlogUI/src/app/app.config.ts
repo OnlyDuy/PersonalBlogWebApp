@@ -6,8 +6,11 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { tokenInterceptor } from './interceptors/token.interceptor';
 import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
 
+import { provideAnimations } from '@angular/platform-browser/animations';
+
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideAnimations(),
     provideRouter(routes),
     provideClientHydration(),
     provideHttpClient(
